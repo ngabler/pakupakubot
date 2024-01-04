@@ -7,7 +7,6 @@ function bot() {
     const distanceToEnemy = Math.abs(player.x - enemy.x);
     const playerSpeed = 0.5 * difficulty;
     const canReachEnemy = (distanceToEnemy / playerSpeed) <= powerUpRemaining;
-
     const powerUpAlmostOver = powerTicks < 10 && powerTicks > 0;
     const enemyJustDefeated = enemy.eyeVx !== 0;
 
